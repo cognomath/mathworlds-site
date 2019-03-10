@@ -49,6 +49,9 @@ exclude:
   - site.iml
   - CNAME
 
+include:
+  - README.md
+
 timezone: America/New_York
 
 #header_pages:
