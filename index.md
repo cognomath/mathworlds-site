@@ -2,3 +2,11 @@
 layout: page
 title: Home
 ---
+
+## Mission Statement ##
+
+Math Worlds’ mission is to support elementary school children in developing perseverance and
+problem solving skills while learning mathematics.
+To achieve this, Math Worlds is developing a structured collection of online games and
+activities that will require minimal adults’ support and contain almost no explanations,
+thus letting children develop their math knowledge on their own in a highly individualized way. 
