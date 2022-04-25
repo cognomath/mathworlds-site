@@ -1,0 +1,84 @@
+<style>
+
+	.title {
+	text-align: center;
+	font-size: 100px;
+	font-family:  Arial, Times New Roman, sans-serif;
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	}
+	
+	.button {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.1s;
+	cursor: pointer;
+	position: fixed;
+	top: 50px;
+	}
+
+	.Our_Story {
+	background-color: white; 
+	color: black; 
+	border: 2px solid #4CAF50;
+	position: fixed;
+	right: 650px;
+	}
+
+	.Our_Story:hover {
+	background-color: #4CAF50;
+	color: white;
+	}
+	
+	
+	.explanation_1 {
+	position: fixed;
+	top: 200px;
+	left: 300px;
+	text-align: center;
+	height: 10%;
+	width: 50%;
+	font-size: 25px;
+	font-family: Arial, Times New Roman, sans-serif;
+	background-position: center;
+	background-color: gold;
+	margin: auto;
+	
+	}
+	
+	.explanation_2 {
+	position: fixed;
+	top: 350px;
+	left: 300px;
+	text-align: center;
+	background-position: center;
+	}
+	
+	.whats_special {
+	position: fixed;
+	top: 450px;
+	left: 300px;
+	text-align: center;
+	background-color: green;
+	background-position: center;
+	}
+	
+	.robot_1 {
+	position: fixed;
+	top: 200px;
+	left: 25px;
+	}
+	
+	.footer {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	}
+</style>
