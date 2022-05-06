@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title></title>
 </head>
 <script>
 // JS for the tabs
-function openCity(evt, cityName) {
+function openTab(evt, tabname) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -22,136 +24,23 @@ function openCity(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
-<style>
 
-	.title {
-	text-align: center;
-	font-size: 75px;
-	font-family:  Arial, Times New Roman, sans-serif;
-	position: absolute;
-	top: 25px;
-	left: 28vw;
-	}
-	
-	
-	.explanation_1 {
-	position: absolute;
-	top: 200px;
-	left: 50vw;
-	text-align: center;
-	overflow:
-	height: 75px;
-	width: 13vw;
-	font-size: 25px;
-	font-family: Arial, Times New Roman, sans-serif;
-	background-color: gold;
-	margin: auto;
-	}
-	
-	.explanation_2 {
-	position: absolute;
-	top: 350px;
-	left: 45vw;
-	text-align: center;
-	background-position: center;
-	}
-	
-	.whats_special {
-	position: absolute;
-	top: 450px;
-	left: 50vw;
-	text-align: center;
-	}
-	
-	.logo {
-	position: absolute;
-	top: 200px;
-	left: 8vw;
-	}
-	
-	.footer {
-	position: absolute;
-	bottom: 25px;
-	right: 5vw;
-	}
-	
-	<!-- Tab Css: -->
-	/* Style the tab */
-	.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  position: fixed;
-  right: 50vw;
-}
-
-	/* Style the buttons that are used to open the tab content */
-	.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-	/* Change background color of buttons on hover */
-	.tab button:hover {
-  background-color: #ddd;
-}
-
-	/* Create an active/current tablink class */
-	.tab button.active {
-  background-color: #ccc;
-}
-
-	/* Style the tab content */
-	.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-  position: fixed;
-  float: right;
-  top: 150px;
-  padding: 1vw;
-}
-</style>
 <body>
 
 
 
 <h1 class = title>MATH WORLDS</h1>
-<!-- Old html>
-	<p>
-	<div class = explanation_1>Math Worlds is a young nonprofit organization.</div>
-	
-	
-	<div class = explanation_2>
-	The mission of Math Worlds  is to support every preschooler and elementary school student in
-	<br>
-	developing perseverance, problem solving skills, and a love of mathematics. 
-	<br>
-	To achieve this, Math Worlds is developing a structured collection of online games and
-	<br>
-	activities that will let children learn mathematics in a highly individualized, efficient and enjoyable way.
-	</div>
-	<div class = whats_special>
-	<a href = https://www.google.com>What is special about MW games?</a>
-	</div>
-	</p>
-	
-	<img class = logo, src = "file:///C:/Users/The%20Critic/Downloads/Logo-Final-outlines.svg", width = 250px, height = 300vw, alt = "Happy Robot">
-<-->
+<h2 class = slogan>Learn Math Your Way</h2>
+
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'AboutUs')">About Us</button>
-  <button class="tablinks" onclick="openCity(event, 'MWGames')">MW Games</button>
+  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'AboutUs')">About Us</button>
+  <button class="tablinks" onclick="openTab(event, 'MWGames')">MW Games</button>
+	<button class="tablinks" onclick="openTab(event, 'ContactUs')">Contact Us</button>
 </div>
 <!-- Tab content -->
 <div id="Home" class="tabcontent">
@@ -177,8 +66,7 @@ What is special about MW games?</p>
 	<li>While playing, children will develop new knowledge, not only practice skills.</li>
 	<li>Children will progress in their own style and pace.</li>
 	</ul>
-	
-</p>
+
 </div>
 
 <div id="MWGames" class="tabcontent">
@@ -189,13 +77,23 @@ What is special about MW games?</p>
 	<li>Game 2</li>
 	<li>Game 3</li>
 	</ul>
-  
-  </p>
 </div>
-	<footer class = footer>
+
+	<div id="ContactUs" class = "tabcontent">
+	<h3>Contact Us</h3>
+	<p> Contact us at ______
+	</p>
+</div>
+	<footer class = footer1>
     <p>
 		Site is being developed by <a href = https://www.google.com>Eliezer Markov.</a>
     </p>
+	</footer>
+
+	<footer class = footer2>
+	<p>
+		Math Worlds is a 501(c) nonprofit charitable organization.
+	</p>
 	</footer>
 </body>
 </html>
