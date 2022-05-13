@@ -17,25 +17,38 @@ html * {
 .logo {
 	float: right;
 }
-
+body {
+	background-color: #09faba;
+}
 .footer1 {
 	position: absolute;
-	bottom: 25px;
-	right: 1vw;
+	bottom: 10px;
+	right: 0.5vw;
+	background-color: coral;
+	border-width:  7px;
+	padding: 5px;
+	border-style: solid;
+	border-color: coral;
+	border-radius: 15px;
 }
 
 .footer2 {
 	position: absolute;
-	bottom: 25px;
-	left: 1vw;
+	bottom: 10px;
+	left: 0.5vw;
+	background-color: coral;
+	border-width:  7px;
+	padding: 5px;
+	border-style: solid;
+	border-color: coral;
+	border-radius: 15px;
 }
 
 /* Tab CSS:
 Style the tab */
 .tab {
 	overflow: hidden;
-	border: 1px solid #ccc;
-	background-color: #f1f1f1;
+	background-color: #09faba;
 	position: fixed;
 }
 
@@ -48,7 +61,7 @@ Style the tab */
 	cursor: pointer;
 	padding: 15px 1vw;
 	transition: 0.3s;
-	background-color: #2596be;
+	background-color: #0091c4;
 	font-size: 20px;
 	font-family: Times New Roman, sans-serif;
 	margin: 0 10px 10px 0;
