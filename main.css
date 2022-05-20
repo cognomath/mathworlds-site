@@ -1,82 +1,70 @@
-
 	.title {
-	text-align: center;
-	font-size: 100px;
-	font-family:  Arial, Times New Roman, sans-serif;
+	font-size: 50px;
 	position: fixed;
-	top: 25px;
-	left: 25px;
-	}
-	
-	.button {
-		border: none;
-		color: white;
-		padding: 16px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin: 4px 2px;
-		transition-duration: 0.1s;
-		cursor: pointer;
-		position: fixed;
-		top: 50px;
-	}
-
-	.Our_Story {
-		background-color: white; 
-		color: black; 
-		border: 2px solid #4CAF50;
-		position: fixed;
-		right: 650px;
-	}
-
-	.Our_Story:hover {
-	background-color: #4CAF50;
-	color: white;
-	}
-	
-	
-	.explanation_1 {
-	position: fixed;
-	top: 200px;
-	left: 300px;
-	text-align: center;
-	height: 10%;
-	width: 50%;
-	font-size: 25px;
-	font-family: Arial, Times New Roman, sans-serif;
-	background-position: center;
-	background-color: gold;
+	right: 13vw;
 	margin: auto;
-	
-	}
-	
-	.explanation_2 {
+}
+
+	.slogan {
 	position: fixed;
-	top: 350px;
-	left: 300px;
-	text-align: center;
-	background-position: center;
-	}
-	
-	.whats_special {
-	position: fixed;
-	top: 450px;
-	left: 300px;
-	text-align: center;
-	background-color: green;
-	background-position: center;
-	}
-	
-	.robot_1 {
-	position: fixed;
-	top: 200px;
-	left: 25px;
-	}
-	
+	top: 75px;
+	right: 17vw;
+}
+
+	.logo {
+	float: right;
+}
+
 	.footer {
 	position: absolute;
 	bottom: 25px;
-	right: 25px;
+	right: 5vw;
 	}
+
+	
+	<!-- Tab Css: -->
+	/* Style the tab */
+	.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	position: fixed;
+	right: 50vw;
+}
+
+	/* Style the buttons that are used to open the tab content */
+	.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	padding: 15px 3vw;
+	transition: 0.3s;
+	background-color: #2596be;
+	font-size: 25px;
+	font-family: Times New Roman;
+	margin: 0 10px 10px 0;
+}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+	background-color: #ddd;
+}
+
+	/* Create an active/current tablink class */
+	.tab button.active {
+	background-color: #ccc;
+}
+
+	/* Style the tab content */
+	.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	position: fixed;
+	float: right;
+	top: 150px;
+	padding: 1vw;
+}
