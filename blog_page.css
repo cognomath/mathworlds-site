@@ -1,10 +1,21 @@
-.text-box {
+.vl {
     position: absolute;
-    text-align: center;
-    left: 50vw;
-    justify-content: center;
-<<<<<<< HEAD
+    left: 24vw;
+    border-left: 15px solid green;
+    height: 1000px;
 }
-=======
+
+.square {
+    width: 50%;
+    height: 0;
+    padding-top: 100%;
+    background-color: #ccc;
+    position: relative;
+    margin: auto;
 }
->>>>>>> a89566c (Added a template blog page (can't really work on it without knowing what to do for it), as well as small edits.)
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

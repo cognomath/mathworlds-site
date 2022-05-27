@@ -15,8 +15,9 @@ html * {
 }
 
 .logo {
-	float: right;
+
 }
+
 .footer1 {
 	position: absolute;
 	bottom: 10px;
@@ -51,6 +52,7 @@ Style the tab */
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
+
 	float: left;
 	border: none;
 	border-radius: 10px;
