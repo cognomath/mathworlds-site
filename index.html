@@ -3,6 +3,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito">
 	<title>MathWorlds</title>
 </head>
 <script>
@@ -51,7 +52,6 @@ function openTab(evt, tabname) {
 </div>
 <!-- Tab content -->
 <div id="Home" class="tabcontent">
-  <h3>Home</h3>
   <p>Math Worlds is a young nonprofit organization.
 	<br><br>
 	The mission of Math Worlds  is to support every preschooler and elementary school student in developing
@@ -67,7 +67,6 @@ What is special about MW games?</p>
 </div>
 
 <div id="AboutUs" class="tabcontent">
-  <h3>About Us</h3>
   <p>We aspire to develop Math Worlds: a new generation of online games and puzzles. 
 	<br>
 	What makes Math Worlds game collection unique:
@@ -82,7 +81,6 @@ What is special about MW games?</p>
 </div>
 
 <div id="MWGames" class="tabcontent">
-  <h3>MW Games</h3>
   <p>We currently have these games:
 	<ul>
 	<li>Game 1</li>
@@ -92,13 +90,20 @@ What is special about MW games?</p>
 </div>
 
 	<div id="ContactUs" class = "tabcontent">
-	<h3>Contact Us</h3>
-	<p> Contact us at ______
+		<form action="">
+		<label for="email">Your Email:</label>
+		<input type ="email" id="email" name="email" required> <br><br>
+
+		<label for="note">Note: </label>
+		<textarea id="note" name="note" rows="10" cols="50" required></textarea>
+		<br><br>
+		<input type="submit">
+		</form>
+	<p>
 	</p>
 </div>
 
 	<div id="OurStory" class = "tabcontent">
-		<h3>Our Story</h3>
 		<p>
 			Nina Dubinsky has been teaching math to kids of all ages and also has experience in curriculum design and educational
 			research.
