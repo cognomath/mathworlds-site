@@ -19,3 +19,9 @@
     top: 0;
     left: 0;
 }
+.text-box {
+    position: absolute;
+    text-align: center;
+    left: 50vw;
+    justify-content: center;
+}
