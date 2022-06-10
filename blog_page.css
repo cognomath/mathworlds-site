@@ -1,3 +1,24 @@
+.vl {
+    position: absolute;
+    left: 24vw;
+    border-left: 15px solid green;
+    height: 1000px;
+}
+
+.square {
+    width: 50%;
+    height: 0;
+    padding-top: 100%;
+    background-color: #ccc;
+    position: relative;
+    margin: auto;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .text-box {
     position: absolute;
     text-align: center;
