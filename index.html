@@ -9,25 +9,28 @@
 <script>
 // JS for the tabs
 function openTab(evt, tabname) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+	// Declare all variables
+	var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+	// Get all elements with class="tabcontent" and hide them
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+	// Get all elements with class="tablinks" and remove the class "active"
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabname).style.display = "block";
-  evt.currentTarget.className += " active";
+	// Show the current tab, and add an "active" class to the button that opened the tab
+	document.getElementById(tabname).style.display = "block";
+	evt.currentTarget.className += " active";
 }
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+
 </script>
 
 <body>
@@ -41,15 +44,14 @@ function openTab(evt, tabname) {
 
 <h2 class = slogan>Learn Math Your Way</h2>
 
-<h2 class = slogan>Learn Math Your Way</h2>
-
 <div class="tab">
-	<button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
-	<button class="tablinks" onclick="openTab(event, 'AboutUs')">About Us</button>
-	<button class="tablinks" onclick="openTab(event, 'MWGames')">MW Games</button>
-	<button class="tablinks" onclick="openTab(event, 'ContactUs')">Contact Us</button>
-	<button class="tablinks" onclick="openTab(event, 'OurStory')">Our Story</button>
+	<button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"><strong>Home</strong></button>
+	<button class="tablinks" onclick="openTab(event, 'AboutUs')"><strong>About Us</strong></button>
+	<button class="tablinks" onclick="openTab(event, 'OurGames')"><strong>Our Games</strong></button>
+	<button class="tablinks" onclick="openTab(event, 'GetinTouch')"><strong>Get in Touch</strong></button>
+	<button class="tablinks" onclick="openTab(event, 'OurStory')"><strong>Our Story</strong></button>
 </div>
+
 <!-- Tab content -->
 <div id="Home" class="tabcontent">
   <p>Math Worlds is a young nonprofit organization.
@@ -80,7 +82,7 @@ What is special about MW games?</p>
 
 </div>
 
-<div id="MWGames" class="tabcontent">
+<div id="OurGames" class="tabcontent">
   <p>We currently have these games:
 	<ul>
 	<li>Game 1</li>
@@ -89,8 +91,8 @@ What is special about MW games?</p>
 	</ul>
 </div>
 
-	<div id="ContactUs" class = "tabcontent">
-		<form action="">
+	<div id="GetinTouch" class = "tabcontent">
+		<!-- <form action="">
 		<label for="email">Your Email:</label>
 		<input type ="email" id="email" name="email" required> <br><br>
 
@@ -99,7 +101,9 @@ What is special about MW games?</p>
 		<br><br>
 		<input type="submit">
 		</form>
-	<p>
+		-->
+		<a href="mailto:contact@mathworlds.org">Email Us!</a>
+		<p>
 	</p>
 </div>
 
