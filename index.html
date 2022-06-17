@@ -28,8 +28,6 @@ function openTab(evt, tabname) {
 	document.getElementById(tabname).style.display = "block";
 	evt.currentTarget.className += " active";
 }
-	// Get the element with id="defaultOpen" and click on it
-	document.getElementById("defaultOpen").click();
 
 </script>
 
@@ -39,48 +37,36 @@ function openTab(evt, tabname) {
 
 <!-- <h1 class = title>MATH WORLDS</h1> -->
 <div class = logo >
-	<img src = "Logo-Final-outlines.svg" width = 150px, height = 150px, alt = "Happy Robot Smiling">
+	<!--<img src = "Logo-Final-outlines.svg" width = 150px, height = 150px, alt = "Happy Robot Smiling"> -->
 </div>
 
 <h2 class = slogan>Learn Math Your Way</h2>
 
 <div class="tab">
-	<button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"><strong>Home</strong></button>
-	<button class="tablinks" onclick="openTab(event, 'AboutUs')"><strong>About Us</strong></button>
-	<button class="tablinks" onclick="openTab(event, 'OurGames')"><strong>Our Games</strong></button>
-	<button class="tablinks" onclick="openTab(event, 'GetinTouch')"><strong>Get in Touch</strong></button>
-	<button class="tablinks" onclick="openTab(event, 'OurStory')"><strong>Our Story</strong></button>
+	<button class="tablinks active" onclick="openTab(event, 'Home')"><span class="bold homepage"><img src = "Logo-Final-outlines.svg" width = 150px, height = 150px, alt = "Happy Robot Smiling"></span></button>
+	<button class="tablinks" onclick="openTab(event, 'OurStory')"><span class="bold">Our Story</span></button>
+	<button class="tablinks" onclick="openTab(event, 'OurGames')"><span class="bold">Our Games</span></button>
+	<button class="tablinks" onclick="openTab(event, 'GetinTouch')"><span class="bold">Get in Touch</span></button>
+	<button class="tablinks" onclick="openTab(event, 'Donate')"><span class="bold">Donate</span></button>
 </div>
 
 <!-- Tab content -->
-<div id="Home" class="tabcontent">
+<div id="Home" class="tabcontent" style="display:block">
   <p>Math Worlds is a young nonprofit organization.
 	<br><br>
 	The mission of Math Worlds  is to support every preschooler and elementary school student in developing
 	  <br>
 	  perseverance, problem-solving skills, and a love of mathematics.
 	<br>
-	To achieve this, Math Worlds is developing a structured collection of online games and activities that will
-	  let children learn mathematics
+	To achieve this, Math Worlds is developing a structured collection of online games and
+	  <br>
+	  activities that will let children learn mathematics
 	  <br>
 	  in a highly individualized, efficient and enjoyable way.
 	<br><br>
 What is special about MW games?</p>
 </div>
 
-<div id="AboutUs" class="tabcontent">
-  <p>We aspire to develop Math Worlds: a new generation of online games and puzzles. 
-	<br>
-	What makes Math Worlds game collection unique:
-	<br>
-	<ul>
-	<li>The games cover all but language component of comprehensive preK-5 curriculum plus introduction to algebra.</li>
-	<li>They will require minimal adult supervision and support.</li>
-	<li>While playing, children will develop new knowledge, not only practice skills.</li>
-	<li>Children will progress in their own style and pace.</li>
-	</ul>
-
-</div>
 
 <div id="OurGames" class="tabcontent">
   <p>We currently have these games:
@@ -103,8 +89,8 @@ What is special about MW games?</p>
 		</form>
 		-->
 		<a href="mailto:contact@mathworlds.org">Email Us!</a>
-		<p>
-	</p>
+		<br><br>
+		<a href="https://www.linkedin.com/company/math-worlds/about/?viewAsMember=true">Visit our LinkedIn page!</a>
 </div>
 
 	<div id="OurStory" class = "tabcontent">
@@ -132,17 +118,14 @@ What is special about MW games?</p>
 		</p>
 	</div>
 
+	<div id="Donate" class="tabcontent">
+		<p>Coming soon!</p>
+	</div>
 
 	<footer class = footer1>
     <p>
 		Site is being developed by <a href = https://www.google.com>Eliezer Markov.</a>
     </p>
-	</footer>
-
-	<footer class = footer2>
-	<p>
-		MathWorlds is in the process of obtaining 501(c) nonprofit status.
-	</p>
 	</footer>
 
 	<footer class = footer2>
