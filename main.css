@@ -5,54 +5,36 @@ html * {
 body {
 	background-color: #E3F5FC;
 }
+
 .title {
 	  font-size: 50px;
 	  position: fixed;
 	  right: 13vw;
 	  margin: auto;
-  }
+}
 
 .slogan {
 	position: fixed;
-	top: 50px;
-	left: 20vw;
-}
-
-.logo {
-	position: fixed;
-	top: 3vh;
+	top: 25vh;
 	left: 3vw;
+	z-index: 100;
 }
 
 .footer1 {
 	position: absolute;
-	bottom: 5px;
-	right: 0.5vw;
-	/*
-	background-color: coral;
-	border-width:  7px;
-	padding: 5px;
-	border-style: solid;
-	border-color: coral;
-	border-radius: 15px;
-	*/
+	bottom: 0.5vw;
+	left: 0.5vw;
 }
 
 .footer2 {
 	position: absolute;
-	bottom: 5px;
-	left: 0.5vw;
-	/*
-	background-color: coral;
-	border-width:  7px;
-	padding: 5px;
-	border-style: solid;
-	border-color: coral;
-	border-radius: 15px;
-	 */
+	bottom: 0.5vw;
+	right: 0.5vw;
 }
 
-
+.bold {
+	font-weight: 700;
+}
 
 /* Tab CSS:
 Style the tab */
@@ -79,7 +61,7 @@ Style the tab */
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-	color: #FED103;
+	color: #ED037C;
 }
 
 /* Create an active/current tablink class */
@@ -91,8 +73,16 @@ Style the tab */
 .tabcontent {
 	display: none;
 	padding: 6px 12px;
-	border: 1px solid #a20000;
 	position: fixed;
-	top: 175px;
+	top: 250px;
 	background-color: #E3F5FC;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.homepage{
+	position: fixed;
+	top: 3vh;
+	left: 3vw;
 }
