@@ -6,30 +6,16 @@ body {
 	background-color: #E3F5FC;
 }
 
-.title {
-	  font-size: 50px;
-	  position: fixed;
-	  right: 13vw;
-	  margin: auto;
+.homepage{
+	position: relative;
+	top: 2vh;
+	left: 2vh;
 }
 
 .slogan {
-	position: fixed;
-	top: 25vh;
+	position: relative;
+	top: 10vh;
 	left: 3vw;
-	z-index: 100;
-}
-
-.footer1 {
-	position: absolute;
-	bottom: 0.5vw;
-	left: 0.5vw;
-}
-
-.footer2 {
-	position: absolute;
-	bottom: 0.5vw;
-	right: 0.5vw;
 }
 
 .bold {
@@ -41,8 +27,8 @@ Style the tab */
 .tab {
 	overflow: hidden;
 	background-color: #E3F5FC;
-	position: absolute;
-	right: 5vw;
+	position: relative;
+	right: 3vw;
 	top: 10px;
 }
 
@@ -52,7 +38,7 @@ Style the tab */
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 15px 1vw;
+	padding: 15px 3vw;
 	transition: 0.3s;
 	background-color: #E3F5FC;
 	font-size: 20px;
@@ -73,16 +59,21 @@ Style the tab */
 .tabcontent {
 	display: none;
 	padding: 6px 12px;
-	position: fixed;
-	top: 250px;
+	position: relative;
+	top: 15vh;
 	background-color: #E3F5FC;
 	width: 70vw;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
-.homepage{
-	position: fixed;
-	top: 3vh;
-	left: 3vw;
+.footer1 {
+	position: relative;
+	top: 23vh;
+	left: 0.5vw;
+}
+
+.footer2 {
+	position: relative;
+	top: 15vh;
+	left: 60vw;
 }
