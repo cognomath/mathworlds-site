@@ -18,8 +18,12 @@ body {
 	left: 3vh;
 }
 
-
-
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
 
 #1 {
 	position: relative;
@@ -29,9 +33,12 @@ body {
 
 #2 {
 	position: relative;
-	bottom: 25vh;
-	left: 15vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
+
 #3 {
 	position: relative;
 }
@@ -43,7 +50,12 @@ body {
 
 #6 {
 	position: relative;
-	right: 50vw;
+	/*right: 50vw;*/
+	/*margin: auto;*/
+	/*display: block;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*width: 50%;*/
 }
 
 #ASM {
@@ -59,12 +71,18 @@ body {
 .bold {
 	font-weight: 700;
 }
+
 .midtext {
 	font-size: large;
 }
 .bigtext {
 	font-size: larger;
 }
+
+.flex {
+	display: flex;
+}
+
 /* Tab CSS:
 Style the tab */
 .tab {
