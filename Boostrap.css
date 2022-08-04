@@ -1,0 +1,129 @@
+html * {
+    font-family: Nunito, sans-serif; !important
+
+}
+
+body {
+    background-color: #E3F5FC;
+
+}
+.tab-content {
+    position: relative;
+    top: 5vh;
+    bottom: 5vh;
+}
+
+.homepage{
+    position: relative;
+    top: 1vh;
+    left: 1vh;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#1 {
+    position: relative;
+    bottom: 30vh;
+    right: 55vw;
+}
+
+#2 {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#3 {
+    position: relative;
+}
+
+#5 {
+    position: relative;
+    bottom: 45vw;
+}
+
+#6 {
+    position: relative;
+    /*right: 50vw;*/
+    /*margin: auto;*/
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*width: 50%;*/
+}
+
+#ASM {
+    float: right;
+    margin-left: 10px;
+}
+
+#ND {
+    float: left;
+    margin-right: 10px;
+}
+
+.slogan {
+    position: relative;
+    top: 3vh;
+    left: 3vh;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.largetext {
+    font-size: large;
+}
+
+.largertext {
+    font-size: larger;
+}
+
+.bigtext {
+    font-size: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Change background color of buttons on hover */
+.nav button:hover {
+    transition-duration: 0.2s;
+    color: #ED037C;
+}
+
+/* Create an active/current tablink class */
+.nav button:active {
+    color: #009ce0;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40vh;
+    height: 30px;
+}
+
+.footer1 {
+    /*background: aqua;*/
+    height: 100%;
+    width: 50%;
+}
+
+.footer2 {
+    /*background: bisque;*/
+    text-align: right;
+    height: 100%;
+    width: 50%;
+}
