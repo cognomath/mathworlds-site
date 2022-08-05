@@ -1,9 +1,16 @@
 html * {
 	font-family: Nunito, sans-serif; !important
+
 }
 
 body {
 	background-color: #E3F5FC;
+
+}
+.tab-content {
+	position: relative;
+	top: 5vh;
+	bottom: 5vh;
 }
 
 .homepage{
@@ -12,12 +19,12 @@ body {
 	left: 1vh;
 }
 
-.slogan {
-	position: relative;
-	top: 3vh;
-	left: 3vh;
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
-
 
 
 #1 {
@@ -28,9 +35,12 @@ body {
 
 #2 {
 	position: relative;
-	bottom: 25vh;
-	left: 15vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
+
 #3 {
 	position: relative;
 }
@@ -41,7 +51,12 @@ body {
 
 #6 {
 	position: relative;
-	right: 50vw;
+	/*right: 50vw;*/
+	/*margin: auto;*/
+	/*display: block;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*width: 50%;*/
 }
 
 #ASM {
@@ -54,74 +69,68 @@ body {
 	margin-right: 10px;
 }
 
+.slogan {
+	position: relative;
+	top: 3vh;
+	left: 3vh;
+}
+
+#We-are-creating-online-math-games-for-kids {
+	font-size: 50px;
+}
+
 .bold {
 	font-weight: 700;
 }
-.midtext {
+
+.largetext {
 	font-size: large;
 }
-.bigtext {
+
+.largertext {
 	font-size: larger;
 }
-/* Tab CSS:
-Style the tab */
-.tab {
-	overflow: hidden;
-	background-color: #E3F5FC;
-	position: relative;
-	right: 3vw;
-	top: 10px;
+
+.bigtext {
+	font-size: 30px;
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-	float: left;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 15px 5vw;
-	transition: 0.3s;
-	background-color: #E3F5FC;
-	font-size: 20px;
-	margin: 0 10px 10px 0;
+.flex {
+	display: flex;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.nav button:hover {
+	transition-duration: 0.2s;
 	color: #ED037C;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.nav button:active {
 	color: #009ce0;
-}
-
-/* Style the tab content */
-.tabcontent {
-	display: none;
-	padding: 6px 12px;
-	position: relative;
-	top: 8vh;
-	left: 15vw;
-	background-color: #E3F5FC;
-	width: 50vw;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .footer-wrapper {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
-	top: 15vh;
-	height: 50px;
+	top: 40vh;
+	height: 30px;
 }
 
+
 .footer1 {
+	/*background: aqua;*/
+
 	height: 100%;
 	width: 50%;
 }
 
 .footer2 {
+
+	/*background: bisque;*/
+
 	text-align: right;
 	height: 100%;
 	width: 50%;

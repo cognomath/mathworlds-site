@@ -2,138 +2,182 @@
 <html lang="en">
 
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MathWorlds</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito">
-	<title>MathWorlds</title>
 </head>
-<script>
-// JS for the tabs
-function openTab(evt, tabname) {
-	// Declare all variables
-	var i, tabcontent, tablinks;
 
-	// Get all elements with class="tabcontent" and hide them
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
-
-	// Get all elements with class="tablinks" and remove the class "active"
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	}
-
-	// Show the current tab, and add an "active" class to the button that opened the tab
-	document.getElementById(tabname).style.display = "block";
-	evt.currentTarget.className += " active";
-}
-
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!--<style>*{ border: 1px solid red; } </style>-->
 
 <body>
 
-<div class="tab">
-	<button class="tablinks active" onclick="openTab(event, 'Home')"><span class="bold homepage"><img src = "Logo-Final-outlines.svg" width = 150px, height = 150px, alt = "Happy Robot Smiling"></span></button>
-	<button class="tablinks" onclick="openTab(event, 'OurStory')"><span class="bold">Our Story</span></button>
-	<button class="tablinks" onclick="openTab(event, 'OurGames')"><span class="bold">Our Games</span></button>
-	<button class="tablinks" onclick="openTab(event, 'GetinTouch')"><span class="bold">Get in Touch</span></button>
-	<button class="tablinks" onclick="openTab(event, 'Donate')"><span class="bold">Donate</span></button>
-</div>
-
-<h2 class = slogan style="display:inline">Learn Math Your Way</h2>
-
-<!-- Tab content -->
-<div id="Home" class="tabcontent" style="display:block">
-<p class="bigtext bold">We are creating online math games for kids.</p>
-	<img id="2" src="Asset%202.svg" width=500px, height=500px, alt="Happy Robot">
-
-
-</div>
-
-<div id="OurStory" class = "tabcontent">
-<!--	<div id="6">-->
-<!--	<img src="Asset%206.svg" width=250px, height=250px, alt="Chilling Robot">-->
-<!--	</div>-->
-	<div>
-		<img id="ND" src="ND.png" width=143px, height=204px, alt="Nina Dubinsky">
-		Nina Dubinsky has been teaching math to kids of <br>
-		all ages and also has experience in curriculum <br>
-		design and educational research.
-		<br><br><br>
-		<img id="ASM" src="ASM.png" width=141px, height=186px, alt="Anna Shapiro-Mackler">
-		Anna Shapiro-Mackler's experience ranges from <br>
-		software development to owning and running a <br>
-		printing shop, from being an account manager for <br>
-		an offshore company to homeschooling a special <br>
-		needs child. She is an expert in problem-solving, <br>
-		whether the problems are in business or in math.
+<nav>
+	<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+		<button class="nav-link active bold" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><img src = "Logo-Final-outlines.svg" width = 150px, height = 150px, alt = "Happy Robot Smiling"></button>
+		<button class="nav-link bigtext bold" id="nav-ourstory-tab" data-bs-toggle="tab" data-bs-target="#nav-ourstory" type="button" role="tab" aria-controls="nav-ourstory" aria-selected="false">Our Story</button>
+		<button class="nav-link bigtext bold" id="nav-ourgames-tab" data-bs-toggle="tab" data-bs-target="#nav-ourgames" type="button" role="tab" aria-controls="nav-ourgames" aria-selected="false">Our Games</button>
+		<button class="nav-link bigtext bold" id="nav-getintouch-tab" data-bs-toggle="tab" data-bs-target="#nav-getintouch" type="button" role="tab" aria-controls="nav-getintouch" aria-selected="false">Get in Touch</button>
+		<button class="nav-link bigtext bold" id="nav-donate-tab" data-bs-toggle="tab" data-bs-target="#nav-donate" type="button" role="tab" aria-controls="nav-donate" aria-selected="false">Donate</button>
 	</div>
-	<p>
-		As high school students we both experienced the joy of learning math by problem-solving and exploration.
-		<br>
-		That's why we understood each other immediately when we discussed our vision for ideal online educational children's games.
-		<br><br>
-		We imagine children playing online games of their choice, enjoying the process,
-		<br>
-		and learning mathematics naturally when and where it is needed, just like they would learn a language.
-		<br><br>
-		Our dream is to let children experience the joy of playing and the excitement of learning mathematics - at the same time.
-		<br><br>
-		Math Worlds has been created to put this dream into practice.
+</nav>
 
-	</p>
+<h2 class="slogan" style="display:inline">Learn Math Your Way</h2>
+
+<div class="tab-content" id="nav-tabContent">
+	<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div>
+						<img  src="Asset%202.svg" width=350px, height=350px, alt="Happy Robot">
+					</div>
+
+				</div>
+				<p id="We-are-creating-online-math-games-for-kids" class="bold">
+					We are creating online math games for kids.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="tab-pane fade" id="nav-ourstory" role="tabpanel" aria-labelledby="nav-ourstory-tab" tabindex="0">
+		<div class="flex">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<div id="6">
+							<img src="Asset%206.svg" width=250px, height=250px, alt="Chilling Robot">
+						</div>
+					</div>
+
+					<div class="col-8">
+						<div>
+							<img id="ND" src="ND.png" width=143px, height=204px, alt="Nina Dubinsky">
+							<p style="float:left">
+								Nina Dubinsky has been teaching math to kids of <br>
+								all ages and also has experience in curriculum <br>
+								design and educational research.
+								<br><br>
+							</p>
+							<p style="float:right">
+								<img id="ASM" src="ASM.png" width=141px, height=186px, alt="Anna Shapiro-Mackler">
+								Anna Shapiro-Mackler's experience ranges from <br>
+								software development to owning and running a <br>
+								printing shop, from being an account manager <br>
+								for an offshore company to homeschooling a <br>
+								special needs child. She is an expert in <br>
+								problem-solving, whether the problems <br>
+								are in business or in math.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<br><br>
+						As high school students we both experienced the joy of learning math by problem-solving and exploration.
+						That's why we understood each other immediately when we discussed our vision for ideal online educational children's games.
+						<br><br>
+						We imagine children playing online games of their choice, enjoying the process,
+						and learning mathematics naturally when and where it is needed, just like they would learn a language.
+						Our dream is to let children experience the joy of playing and the excitement of learning mathematics - at the same time.
+						<br><br>
+						Math Worlds has been created to put this dream into practice.
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-pane fade" id="nav-ourgames" role="tabpanel" aria-labelledby="nav-ourgames-tab" tabindex="0">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<img id="1" src="Asset%201.svg" width=300px, height=300px, alt="Winking Robot">
+				</div>
+				<div class="col-6">        <p class="largetext">
+					We want all Math Worlds games:<br><br>
+					-to be designed as an environment for children to learn math, not just practice skills; <br>
+					-to be language independent, and to have no or minimal instructions; <br>
+					-to be individualized and adaptive; <br>
+					-to require minimal adult involvement. <br>
+					<br><br>
+					Read our <a href="https://www.linkedin.com/company/math-worlds/posts/?feedView=all&viewAsMember=true" target="_blank">posts</a> to find out why.<br>
+					Examples of games will appear soon.
+				</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="tab-pane fade" id="nav-getintouch" role="tabpanel" aria-labelledby="nav-getintouch-tab" tabindex="0">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<img id="5" src="Asset%205.svg" width=300px, height=300px, alt="Vibing Robot">
+				</div>
+
+				<div class="col-6">
+					<p class="bigtext">
+						We are looking for help and collaboration. <br>
+						We are interested in what you have to say. <br>
+						Email us at contact@mathworlds.org
+						<br>
+						<a href="https://www.linkedin.com/company/math-worlds/about/?viewAsMember=true" target="_blank">Visit our LinkedIn page</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="tab-pane fade" id="nav-donate" role="tabpanel" aria-labelledby="nav-donate-tab" tabindex="0">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<img id="3" src="Asset%203.svg" width=300px, height=300px, alt="Posing Robot">
+				</div>
+				<div class="col-6">
+					<p class="bigtext">Coming soon!</p>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
 </div>
 
 
 
-
-<div id="OurGames" class="tabcontent">
-	<p class="midtext">
-	We want all Math Worlds games:<br><br>
-	-to be designed as an environment for children to learn math, not just practice skills; <br>
-	-to be language independent, and to have no or minimal instructions; <br>
-	-to be individualized and adaptive; <br>
-	-to require minimal adult involvement. <br>
-	<br><br>
-	Read our <a href="https://www.linkedin.com/company/math-worlds/posts/?feedView=all&viewAsMember=true" target="_blank">posts</a> to find out why.  <br>
-	Examples of games will appear soon.
-	</p>
-	<img id="1" src="Asset%201.svg" width=300px, height=300px, alt="Winking Robot">
-
-</div>
-
-	<div id="GetinTouch" class = "tabcontent">
-		<p class="bigtext">We are looking for help and collaboration. <br>
-			We are interested in what you have to say. <br>
-			Email us at <a href="mailto:contact@mathworlds.org">contact@mathworlds.org</a>
-		<br>
-		<a href="https://www.linkedin.com/company/math-worlds/about/?viewAsMember=true" target="_blank">Visit our LinkedIn page</a>
-		<br>
-		<img id="5" src="Asset%205.svg" width=300px, height=300px, alt="Vibing Robot">
-</p>
-</div>
-
-<div id="Donate" class="tabcontent">
-	<p class="bigtext">Coming soon!</p>
-	<img id="3" src="Asset%203.svg" width=300px, height=300px, alt="Posing Robot">
-</div>
 
 
 <div class="footer-wrapper">
 	<footer class = footer1 style="display:inline-block">
-
-    <p>
-		MathWorlds is in the process of obtaining 501(c) nonprofit status.
-	</p>
+		<p>
+			MathWorlds is in the process of obtaining 501(c) nonprofit status.
+		</p>
 	</footer>
 
 	<footer class = footer2 style="display:inline-block">
-	<p>
-		Site is being developed by <a href = "https://github.com/CriticalWasTaken" target="_blank">Eliezer Markov.</a>
-	</p>
+		<p>
+
+			Site is being developed by <a href = "https://github.com/CriticalWasTaken" target="_blank">Eliezer Markov.</a>
+
+		</p>
+
 	</footer>
 </div>
 
 </body>
+
 </html>
