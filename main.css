@@ -70,8 +70,9 @@ body {
 
 .slogan {
 	position: relative;
-	top: 3vh;
-	left: 3vh;
+	top: 2vh;
+	left: 2vh;
+	font-size: 27px;
 }
 
 #We-are-creating-online-math-games-for-kids {
