@@ -1,5 +1,10 @@
+.gradle/
+.idea
+build/
+*.iml
+out/
+*.log
 _site
 .sass-cache
 .jekyll-metadata
-*.iml
-.idea
+.jekyll-cache
